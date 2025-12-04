@@ -8,4 +8,32 @@
 // Nota: 
 // Non è necessario provvedere alla validazione delle email
 
+const listaInvitati = ["marco", "giovanni", "luca", "franco", "enzo", "andrea"]
 
+const mailUser = prompt("inserisci il tuo nome per la verifica di presenza")
+
+let presente = false
+
+for (let i = 0; i < listaInvitati.length; i++) {
+    //debug
+    //console.log(listaInvitati[i]);
+
+    if (mailUser === listaInvitati[i]) {
+        presente = true
+    }
+    //  {
+    //     presente = false
+    //     console.log(presente, "non ci risulti tra gli invitati");
+        
+    // }
+    
+}
+if (presente) {
+    console.log("benvenuto");
+    
+} else {
+    console.log("non sei in lista");
+    
+}
+
+//console.log(presente, "sei presente alla festa benvenuto")
